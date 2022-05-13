@@ -4,7 +4,7 @@
 
 ### 2. Question Categorization
 
-Run grouping.py to get the `grouping_output.csv`,`Distribution of Question Topics.svg` and `counter_topics.csv`.
+Run `grouping.py` to get the `grouping_output.csv`,`Distribution of Question Topics.svg` and `counter_topics.csv`.
 
 `grouping_output.csv`: Result of question labelling.
 
