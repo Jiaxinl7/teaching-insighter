@@ -2,6 +2,14 @@
 
 ## Usage
 
+### 1. Automatic labeling
+
+Run 'auto_label/label_topic.py' to get the automatic labeling. You can customize the label generation, for example:
+
+python auto_label/label_topic.py --line_corpus_path cs510.dat  --label_min_df 2 --n_cand_labels 5 --n_topics 5
+
+Please see https://github.com/xiaohan2012/chowmein for more information.
+
 ### 2. Question Categorization
 
 Run `grouping.py` to get the `grouping_output.csv`,`Distribution of Question Topics.svg` and `counter_topics.csv`.
