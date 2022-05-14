@@ -39,7 +39,7 @@ python grouping.py PATH
 Run `answer_locating.py` to get the answer to each question in `grouping_output.csv`, and append a column `answer` to it.
 
 ```
-python answer_locating.py PATH
+python answer_locating.py
 ```
 
 ### 4. Report Generating
