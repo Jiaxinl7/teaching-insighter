@@ -12,6 +12,17 @@ Please see https://github.com/xiaohan2012/chowmein for more information.
 
 ### 2. Question Categorization
 
+Before you run this part, you should make sure you have prepared the following documents: `questions.csv` and `text.csv`.
+
+The format of `questions.csv`: 
+```
+question
+```
+
+The format of `text.csv`:
+```
+topic,text
+```
 Run `grouping.py` to get the `grouping_output.csv`,`Distribution of Question Topics.svg` and `counter_topics.csv`.
 
 `grouping_output.csv`: Result of question labelling.
@@ -44,3 +55,6 @@ Then run the following command to generate the report:
 ```
 python report_generator.py
 ```
+
+The result of this part is a report in PDF format.
+`report.pdf` is an example of output.

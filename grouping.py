@@ -155,7 +155,7 @@ plot_file.sort_values(by="count" , ascending=False,inplace=True)
 plot_file.to_csv(path+'/counter_topics.csv',index=False,header=True)
 
 
-fig, axes = plt.subplots(figsize=(20,10),ncols=2) # 设置绘图区域大小
+fig, axes = plt.subplots(figsize=(20,10),ncols=2) 
 ax1, ax2 = axes.ravel()
 
 colors = cm.rainbow(np.arange(len(plot_file['count']))/len(plot_file['count'])) # colormaps: Paired, autumn, rainbow, gray,spring,Darks
@@ -164,7 +164,6 @@ patches, texts, autotexts = ax1.pie(plot_file['count'], labels=plot_file['labels
 
 ax1.axis('equal')  
 
-# 重新设置字体大小
 proptease = fm.FontProperties()
 proptease.set_size('x-large')
 # font size include: ‘xx-small’,x-small’,'small’,'medium’,‘large’,‘x-large’,‘xx-large’ or number, e.g. '12'
@@ -173,7 +172,6 @@ plt.setp(texts, fontproperties=proptease)
 
 ax1.set_title('Distribution of Question Topics', loc='center')
 
-# ax2 只显示图例（legend）
 ax2.axis('off')
 ax2.legend(patches, plot_file['labels'], loc='center left')
 
